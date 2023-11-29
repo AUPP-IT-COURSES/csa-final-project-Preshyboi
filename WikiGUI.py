@@ -12,7 +12,7 @@ def scrape_data():
     world_titles = table.find_all('th')
     world_table_titles = [title.text.strip() for title in world_titles]
 
-    pd.set_option('display.width', 900000000)  # Set the width to your desired value
+    pd.set_option('display.width', 900000000)  # Set the width to desired value
 
     df = pd.DataFrame(columns=world_table_titles)
 
